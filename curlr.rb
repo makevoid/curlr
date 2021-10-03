@@ -48,9 +48,9 @@ def main
     url    = ARGV[1]
   end
   method = method.to_sym
+  raise "UrlNotPassedError - please specify an url" unless url
 
   resolve method: method, url: url
 end
-
 
 puts main
